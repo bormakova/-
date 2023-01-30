@@ -14,7 +14,7 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    /* height: 100%; убрала, т.к. из-за этого параметра футер наезжал на content*/
     background-color: #F5F5F5;
 }
 
@@ -23,6 +23,10 @@ body {
     margin: auto;
     background: #fff;
 }
+
+/* .content {
+    flex: 1 0 auto;
+} */
 
 .container--color {
     background: #B6A498;
@@ -177,7 +181,7 @@ p {
     padding-top: 100px;
 }
 
-/*--- УСЛУГИ начало ---*/
+/*--- УСЛУГИ конец ---*/
 
 /*--- ПОРТФОЛИО начало ---*/
 
@@ -187,6 +191,12 @@ p {
     background-color: #b6a498;
 }
 
+.portfolio h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
 .portfolio_slaider {
     max-width: 1140px;
     height: 540px;
@@ -194,10 +204,37 @@ p {
 
 .portfolio_arrows {
     position: relative;
-    left: -75px;
+    /* left: -75px; */
     top: 100px;
+    
 }
 
+/* .portfolio_slaider--images { можно удалить, т.к. эти стили используются ниже
+    max-width: 652px;
+    height: 540px;
+    
+} */
+
+.portfolio_slaider--images-items {
+    width: 652px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio_slaider--images-items:not(:last-child) {
+    margin-bottom: 31px;
+}
+
+/*--- ПОРТФОЛИО конец ---*/
+
+/*--- СЕРТИФИКАТ начало ---*/
+
+.sertificate {
+    height: 700px;
+    background-color: #fff;
+}
+
+/*--- СЕРТИФИКАТ конец ---*/
 
 /*--- Футер начало ---*/
 .footer {
