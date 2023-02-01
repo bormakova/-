@@ -15,11 +15,11 @@
             <a href=""><img src="images/logo.png" alt=""></a>   <!-- возможно здесь нужно будет убрать ссылку -->
             <div class="header-main_nav">
                 <ul class="header-main_nav--prop">
-                    <li><a href="#">Обо мне</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Портфолио</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="index.html#about">Обо мне</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </div>
             <p class="header-main_number">+7 (9XX)-XX-XX</p>
@@ -33,10 +33,10 @@
                     <div class="banner-content">
                         <div>
                             <p>Персональный визажист</p>
-                            <h1>Марина<br>Темлюкова</h1>
+                            <h1>Ольга<br>Сивкова</h1>
                         </div>
                         <div class="banner-content_button--prop">
-                            <a href=""><img src="images/button-circle.svg" alt=""></a>
+                            <a href="#contacts"><img src="images/button-circle.svg" alt=""></a>
                             <p>Запишитесь<br>сейчас</p>
                         </div>
                     </div>
@@ -108,6 +108,8 @@
                 </div>
             </section>
             <!-- УСЛУГИ конец -->
+
+            <!-- ПОРТФОЛИО начало -->
             <section class="portfolio">
                 <div class="portfolio_arrows">
                     <img src="images/arrow-4.svg" alt="">
@@ -131,6 +133,9 @@
                     </div>
                 </div>
             </section>
+            <!-- ПОРТФОЛИО конец -->
+
+            <!-- СЕРТИФИКАТ начало -->
             <section class="sertificate">
                 <div class="container d-flex flex-sb sertificate--prop">
                     <div class="sertificate_content">
@@ -141,7 +146,7 @@
                         <p>P.S.: срок действия сертификата - 3 месяца со<br>
                         дня вручения имениннику.</p>
                         <div class="sertificate_content--button">
-                            <a href="#"><img src="images/button-circle-1.svg" alt=""></a>
+                            <a href="#contacts"><img src="images/button-circle-1.svg" alt=""></a>
                             <p>Заказать</p>
                         </div>
                     </div>
@@ -186,7 +191,27 @@
                     </div>
                 </div>
             </section>
-            <section class="contacts"></section>
+            <!-- СЕРТИФИКАТ конец -->
+
+            <!-- КОНТАКТЫ начало -->
+            <section class="contacts">
+                <div class="container">
+                    <h2>Обратная связь</h2>
+                    <div class="contacts--prop d-flex flex-sb">
+                        <img src="images/contacts.png" alt="">
+                        <form class="contacts-form flex-wrap" action="">
+                            <input type="text" required class="input-name" name="name" id="" placeholder="Имя" pattern="^[a-zA-ZA-Яа-яЁё\s]+$" title="Введите ваше имя">
+                            <input type="tel" required class="input-phone" name="phone" id="" placeholder="Телефон в формате 8XХХ-ХХ-ХХ" pattern="8[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="Введите номер телефона">
+                            <input type="text" required class="input-name" name="services" id="" placeholder="Cборы/Фотосессия/Сертификат" pattern="^[a-zA-ZA-Яа-яЁё\s]+$" title="Cборы/Фотосессия/Сертификат">
+                            <div class="contacts-form__button">
+                                <input class="form__button--prop" type="submit" value="Отправить">
+                                <p id="text-info" class="form__button--info">Нажимая на кнопку «Отправить», вы соглашаетесь<br>на обработку персональных данных.</p>
+                                <p id="text-button-click" class="form__button--info-click">Данные успешно отправлены!</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
     <footer class="footer container">
