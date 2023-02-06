@@ -111,25 +111,58 @@
 
             <!-- ПОРТФОЛИО начало -->
             <section class="portfolio">
-                <div class="portfolio_arrows">
-                    <img src="images/arrow-4.svg" alt="">
-                    <img src="images/arrow-3.svg" alt="">
-                </div>
+                
                 <div class="container portfolio--prop container--color">
                     
                     <h2>Портфолио</h2>
-                    <div class="portfolio_slaider d-flex flex-sb">
-                        <img src="images/portfolio-1.png" alt="">
-                        <div class="portfolio_slaider--images">
-                            <div class="portfolio_slaider--images-items">
-                                <img src="images/portfolio-2.png" alt="">
-                                <img src="images/portfolio-4.png" alt="">
+                    
+                    <div class="portfolio__slaider d-flex flex-sb portfolio__slaider--container-js">
+                        <div class="portfolio__arrows">
+                            <button class="slaider-btn--js-prev"><img src="images/arrow-4.svg" alt=""></button> 
+                            <button class="slaider-btn--js-next"><img src="images/arrow-3.svg" alt=""></button> 
+                        </div>
+                        <!-- создание слайдера (обернула в див) -->
+                        <div class="portfolio__slaider--js">
+                            <div class="portfolio__slaider--flex portfolio__slaider--js-item">
+                                <img src="images/portfolio-1.png" alt="">
+                                <div class="portfolio__slaider--images">
+                                    <div class="portfolio__slaider--images-items">
+                                        <img src="images/portfolio-2.png" alt="">
+                                        <img src="images/portfolio-4.png" alt="">
+                                    </div>
+                                    <div class="portfolio__slaider--images-items">
+                                        <img src="images/portfolio-3.png" alt="">
+                                        <img src="images/portfolio-5.png" alt="">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="portfolio_slaider--images-items">
-                                <img src="images/portfolio-3.png" alt="">
-                                <img src="images/portfolio-5.png" alt="">
+                            <div class="portfolio__slaider--flex portfolio__slaider--js-item">
+                                <img src="images/portfolio-1.png" alt="">
+                                <div class="portfolio__slaider--images">
+                                    <div class="portfolio__slaider--images-items">
+                                        <img src="images/portfolio-2.png" alt="">
+                                        <img src="images/portfolio-4.png" alt="">
+                                    </div>
+                                    <div class="portfolio__slaider--images-items">
+                                        <img src="images/portfolio-3.png" alt="">
+                                        <img src="images/portfolio-5.png" alt="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <!-- <div class="portfolio__slaider--js">
+                            <img src="images/portfolio-1.png" alt="">
+                            <div class="portfolio_slaider--images">
+                                <div class="portfolio_slaider--images-items">
+                                    <img src="images/portfolio-2.png" alt="">
+                                    <img src="images/portfolio-4.png" alt="">
+                                </div>
+                                <div class="portfolio_slaider--images-items">
+                                    <img src="images/portfolio-3.png" alt="">
+                                    <img src="images/portfolio-5.png" alt="">
+                                </div>
+                            </div>
+                        </div>        -->
                     </div>
                 </div>
             </section>
@@ -228,6 +261,6 @@
         </div>
     </footer>
     
-
+<script src="js/slider.js"></script>
 </body>
 </html>

@@ -193,44 +193,64 @@ p {
     max-width: 100%;
     height: 850px;
     background-color: #b6a498;
+    padding-top: 50px;
 }
 
 .portfolio h2 {
-    margin-top: 50px;
     margin-bottom: 50px;
     color: #fff;
 }
 
-.portfolio_slaider {
+.portfolio__slaider {
     max-width: 1140px;
     height: 540px;
-}
-
-.portfolio_arrows {
     position: relative;
-    /* left: -75px; */
-    top: 100px;
-    /* height: 100px;
-    width: 20px;
-    display: flex;
-    flex-wrap: wrap; */
 }
 
+.portfolio__arrows {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: -75px;
+}
 
-/* .portfolio_slaider--images { можно удалить, т.к. эти стили используются ниже
-    max-width: 652px;
-    height: 540px;
-    
-} */
+.portfolio__arrows button {
+    background-color: #b6a498;
+    border: 0;
+    cursor: pointer;
+}
 
-.portfolio_slaider--images-items {
+.portfolio__arrows button:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.portfolio__slaider--flex {
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.portfolio__slaider--images-items {
     width: 652px;
     display: flex;
     justify-content: space-between;
 }
 
-.portfolio_slaider--images-items:not(:last-child) {
+.portfolio__slaider--images-items:not(:last-child) {
     margin-bottom: 31px;
+}
+
+.portfolio__slaider--js-item {
+    height: auto;
+    width: auto;
+}
+
+.portfolio__slaider--js {
+    position: relative;
+    height: auto;
+    width: auto;
 }
 
 /*--- ПОРТФОЛИО конец ---*/
