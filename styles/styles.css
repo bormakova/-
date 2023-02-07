@@ -244,6 +244,11 @@ p {
 
 .portfolio__slaider--js-item {
     height: auto;
+    
+}
+
+.portfolio__slaider--js-item img {
+    height: auto;
     width: auto;
 }
 
@@ -251,6 +256,7 @@ p {
     position: relative;
     height: auto;
     width: auto;
+    overflow: hidden;
 }
 
 /*--- ПОРТФОЛИО конец ---*/
