@@ -115,7 +115,7 @@
                 <div class="container portfolio--prop container--color">
                     
                     <h2>Портфолио</h2>
-                    
+                    <!-- разобраться почему слайдер проматывает вверх начальный, а не скрывает его и не открывает следующий -->
                     <div class="portfolio__slaider d-flex flex-sb portfolio__slaider--container-js">
                         <div class="portfolio__arrows">
                             <button class="slaider-btn--js-prev"><img src="images/arrow-4.svg" alt=""></button> 
@@ -174,7 +174,7 @@
                 </div>                
             </section>
             <section class="reviews">
-                <div class="container">
+                <div class="container reviews__slider-js-container">
                     <div class="d-flex flex-sb">
                         <h2>Отзывы</h2>
                         <div class="reviews--arrows">
@@ -182,25 +182,48 @@
                             <a href="#!" class="slaider-btn--js-next"><img src="images/arrow-1.svg" alt=""></a>
                         </div>
                     </div>
-                    <div class="reviews--prop d-flex flex-sb">
-                        <div class="reviews-items">
+                    <div class="reviews--prop d-flex flex-sb reviews__slider-js">
+                        <div class="reviews-items reviews__slider-js-item">
                             <div>
                                 <img src="images/reviews-1.png" alt="">
                                 <p>Милана</p>
+                            </div>
+                            <p>Мариночка, спасибо тебе<br>
+                                большое за такую<br>
+                                красоту! С тобой очень приятно работать! Ты<br>
+                                большой профессионал<br>
+                                своего дела!
+                            </p>
                         </div>
-                        <p>Мариночка, спасибо тебе<br>
-                            большое за такую<br>
-                            красоту! С тобой очень приятно работать! Ты<br>
-                            большой профессионал<br>
-                            своего дела!
-                        </p>
+                        <div class="reviews-items reviews__slider-js-item">
+                            <div>
+                                <img src="images/reviews-2.png" alt="">
+                                <p>Светлана</p>
+                            </div>
+                            <p>Мариночка, спасибо тебе<br>
+                                большое за такую<br>
+                                красоту! С тобой очень приятно работать! Ты<br>
+                                большой профессионал<br>
+                                своего дела!
+                            </p>
                         </div>
-                        <div class="reviews-items">
-        
-                        <div>
-                            <img src="images/reviews-2.png" alt="">
-                            <p>Светлана</p>
+                        <div class="reviews-items reviews__slider-js-item">
+                            <div>
+                                <img src="images/reviews-3.png" alt="">
+                                <p>Светлана</p>
+                            </div>
+                            <p>Мариночка, спасибо тебе<br>
+                                большое за такую<br>
+                                красоту! С тобой очень приятно работать! Ты<br>
+                                большой профессионал<br>
+                                своего дела!
+                            </p>
                         </div>
+                        <div class="reviews-items reviews__slider-js-item">
+                            <div>
+                                <img src="images/reviews-4.png" alt="">
+                                <p>Светлана</p>
+                            </div>
                             <p>Мариночка, спасибо тебе<br>
                                 большое за такую<br>
                                 красоту! С тобой очень приятно работать! Ты<br>
@@ -249,5 +272,6 @@
     </footer>
     
 <script src="js/slider.js"></script>
+<script src="js/slider-reviews.js"></script>
 </body>
 </html>

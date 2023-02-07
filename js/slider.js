@@ -40,7 +40,7 @@
 // };
 
 /*переменные и константы*/
-let position =0;
+let position = 0;
 const Slidertoshow = 1;
 const Slidertoscroll = 1;
 const container = document.querySelector(`.portfolio__slaider--container-js`);
