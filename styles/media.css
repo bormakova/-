@@ -4,6 +4,8 @@
         padding-right: 20px;
     }
 
+    /*--- БАННЕР начало ---*/
+
     .banner_text {
         display: none;;
 
@@ -11,10 +13,13 @@
 
     .banner__img {
         object-fit: cover;
-        width: 500px;
-        height: 600px;
+        width: 480px;
+        height: 580px;
     }
 
+    /*--- БАННЕР конец ---*/
+
+    /*--- ОБО МНЕ начало ---*/
     .about img {
         object-fit: cover;
         width: 450px;
@@ -25,11 +30,73 @@
     .about-content p {
         font-size: 20px;
     }
+    /*--- ОБО МНЕ конец ---*/
+
+
+    .services img {
+        object-fit: cover;
+        width: 270px;
+        height: 350px;
+    }
+
+
+    /*--- ПОРТФОЛИО начало ---*/
+    .portfolio {
+        height: 650px;
+    }
+
+    .portfolio__slaider--flex img {
+        max-width: 300px;
+        max-height: 430px;
+        object-fit: cover;
+    }
+
+    .portfolio__slaider--flex {
+        max-width: 900px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    .portfolio__slaider--js-styles {
+        display: none;
+    }
+
+    .portfolio__slaider--js-media {
+        max-width: 1140px;
+        max-height: 355px;
+        display: block;
+        justify-content: space-between;
+        overflow: hidden;
+    } 
+
+    .portfolio__slaider--images {
+        max-width: 900px;
+    }
+
+    .portfolio__slaider--images-items {
+        width: 900px;
+    }
+
+    .portfolio__arrows {
+        top: -95px;
+        left: 340px;
+        display: inline;
+    }
+
+    .portfolio__arrows button {
+        transform: rotate(-90deg);
+    }
+
+    .portfolio__arrows button:not(:last-child) {
+        margin-right: 30px;
+    }
+    /*--- ПОРТФОЛИО конец ---*/
 
 }
 
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .hamburger {
         display: block;
     }
@@ -38,4 +105,13 @@
         position: relative;
 
     }
+
+    .reviews-items {
+        width: 400px;
+    } 
+}
+
+
+@media screen and (max-width: 700px) {
+    
 }
