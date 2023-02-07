@@ -7,12 +7,22 @@
     <title>Визажист Марина Темлюкова</title>
 
     <!-- подключение стилей -->
+    
+    <link href="styles/hamburgers.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/media.css">
 </head>
 <body>
     <header class="header">
         <div class="container header-main container--color">
             <a href=""><img src="images/logo.png" alt=""></a>   <!-- возможно здесь нужно будет убрать ссылку -->
+            <!-- подключение бургера -->
+            <button class="header__toggle hamburger hamburger--squeeze" type="button" onclick="this.classList.toggle('is-active')">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            
             <nav class="header-main_nav">
                 <ul class="header-main_nav--prop">
                     <li><a href="index.html#about">Обо мне</a></li>
@@ -40,8 +50,8 @@
                             <p>Запишитесь<br>сейчас</p>
                         </div>
                     </div>
-                    <img src="images/banner.png" alt="">
-                    <p class="banner_text--margin">Блеск в глазах и улыбка<br>- самый лучший отзыв моих клиентов.
+                    <img class="banner__img" src="images/banner.png" alt="">
+                    <p class="banner_text banner_text--margin">Блеск в глазах и улыбка<br>- самый лучший отзыв моих клиентов.
                     <br><br>
                     Спасибо вам за<br>доверие!</p>
                 </div>
