@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Визажист Марина Темлюкова</title>
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <title>Визажист Мария Теплякова</title>
 
     <!-- подключение стилей -->
     
@@ -43,7 +44,7 @@
                     <div class="banner-content">
                         <div>
                             <p>Персональный визажист</p>
-                            <h1>Ольга<br>Сивкова</h1>
+                            <h1>Мария<br>Теплякова</h1>
                         </div>
                         <div class="banner-content_button--prop">
                             <a href="#contacts"><img src="images/button-circle.svg" alt=""></a>
@@ -64,15 +65,15 @@
                     <div class="about-content">
                         <h2>Обо мне</h2>
                         <div class="about-content_text--prop">
-                            <p>Меня зовут Марина Темлюкова. Я - свадебный<br>стилист и визажист.</p>
-                            <p>Начала свою карьеру как экономист в крупной<br>
-                                компании и ни разу не пожалела о том, что<br>
-                                изменила свою жизнь, направив свой<br>
-                                творческий потенциал на работу с красотой.</p>
-                            <p>Я училась у лучших мастеров. До сих пор<br>
-                                продолжаю совершенствовать свой<br>
-                                профессионализм, обучаясь различным<br>
-                                техникам и изучая новые текстуры, материалы.</p>
+                            <p>Меня зовут Мария Теплякова. Я - свадебный стилист и визажист.</p>
+                            <p>Начала свою карьеру как экономист в крупной
+                                компании и ни разу не пожалела о том, что
+                                изменила свою жизнь, направив свой
+                                творческий потенциал на работу с красотой.
+                            <p>Я училась у лучших мастеров. До сих пор
+                                продолжаю совершенствовать свой
+                                профессионализм, обучаясь различным
+                                техникам и изучая новые текстуры, материалы.
                         </div>
                         <div class="about-content--statistic d-flex flex-sb">
                             <div>
@@ -98,21 +99,33 @@
             <section class="services">
                 <div class="container services--prop">
                     <h2 class="">Услуги</h2>
-                    <div class="d-flex flex-sb">
-                        <div>
-                            <img src="images/services-1.png" alt="">
-                            <h3>Сборы<br>невесты</h3>
-                            <p></p>
+                    <div class="services__items d-flex flex-sb">
+                        <div class="services__items--prop">
+                            <img src="images/services-1.png" alt=""></div>
+                            <div class="services__items--prop-toggle">
+                                
+                                <div class="services__items--toggle" role="button" tabindex="0" onclick="this.parentElement.classList.toggle('is-open')"><h3>Сборы<br>невесты</h3></div>
+                                    <div class="services__items--toggle-content">
+                                        <p>Цена: 7000 рублей</p>
+                                        <p>Время: 2 - 3 часа</p>
+                                        <p>Репетиция образа оплачивается отдельно</p>
+                                    </div>
+                                
+                            </div>
                         </div>
-                        <div>
+                        <div class="services__items--prop">
                             <img src="images/services-2.png" alt="">
-                            <h3>Подготовка к<br>фотосессии</h3>
-                            <p></p>
+                            <div>
+                                <h3>Подготовка к<br>фотосессии</h3>
+                                <p>Цена: 4000 рублей<br>Время: 2 - 3 часа<br>Услуга включает в себя прическу и макияж</p>
+                            </div>
                         </div>
-                        <div>
+                        <div class="services__items--prop">
                             <img src="images/services-3.png" alt="">
-                            <h3>Обучающие<br>курсы</h3>
-                            <p></p>
+                            <div>
+                                <h3>Обучающие<br>курсы</h3>
+                                <p>Цена: от 3000 рублей<br>Время: от 4 часов<br>Подробную информацию уточняется по заявке</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -128,11 +141,12 @@
                     <!-- разобраться почему слайдер проматывает вверх начальный, а не скрывает его и не открывает следующий -->
                     <div class="portfolio__slaider d-flex flex-sb portfolio__slaider--container-js">
                         <div class="portfolio__arrows">
-                            <button class="slaider-btn--js-prev"><img src="images/arrow-4.svg" alt=""></button> 
-                            <button class="slaider-btn--js-next"><img src="images/arrow-3.svg" alt=""></button> 
+                            <button class="slaider-btn--js-prev" type="button"><img src="images/arrow-4.svg" alt=""></button> 
+                            <button class="slaider-btn--js-next" type="button"><img src="images/arrow-3.svg" alt=""></button> 
                         </div>
                         <!-- создание слайдера (обернула в див) -->
                         <div class="portfolio__slaider--js portfolio__slaider--js-styles">
+                            <!-- слайд 1 -->
                             <div class="portfolio__slaider--flex portfolio__slaider--js-item">
                                 <img src="images/portfolio-1.png" alt="">
                                 <div class="portfolio__slaider--images">
@@ -146,6 +160,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- слайд 2 -->
                             <div class="portfolio__slaider--flex portfolio__slaider--js-item">
                                 <img src="images/portfolio-6.png" alt="">
                                 <div class="portfolio__slaider--images">
@@ -161,6 +176,7 @@
                             </div>
                         </div>
                         <div class="portfolio__slaider--js-media portfolio__slaider--js">
+                            <!-- слайд 1 для медиа -->
                             <div class="portfolio__slaider--flex portfolio__slaider--js-item">
                                 <div class="portfolio__slaider--images">
                                     <div class="portfolio__slaider--images-items d-flex flex-sb">
@@ -170,8 +186,8 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- слайд 2 для медиа -->
                             <div class="portfolio__slaider--flex portfolio__slaider--js-item">
-                                
                                 <div class="portfolio__slaider--images">
                                     <div class="portfolio__slaider--images-items">
                                         <img src="images/portfolio-1.png" alt="">
@@ -180,8 +196,8 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- слайд 3 для медиа -->
                             <div class="portfolio__slaider--flex portfolio__slaider--js-item">
-                                
                                 <div class="portfolio__slaider--images">
                                     <div class="portfolio__slaider--images-items">
                                         <img src="images/portfolio-6.png" alt="">
@@ -190,8 +206,8 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- слайд 4 для медиа -->
                             <div class="portfolio__slaider--flex portfolio__slaider--js-item">
-                                
                                 <div class="portfolio__slaider--images">
                                     <div class="portfolio__slaider--images-items">
                                         <img src="images/portfolio-6.png" alt="">
@@ -211,26 +227,34 @@
                 <div class="container d-flex flex-sb sertificate--prop">
                     <div class="sertificate_content">
                         <h2>Хотите сделать<br>подарок?</h2>
-                        <p>Вы можете приобрести в подарок сертификат<br>
+                        <p>Вы можете приобрести в подарок сертификат
+                            на любую сумму и на любую услугу,
+                            выполняемую мной.</p>
+                            <p>P.S.: срок действия сертификата - 3 месяца со
+                            дня вручения имениннику.</p>
+                        <!-- <p>Вы можете приобрести в подарок сертификат<br>
                         на любую сумму и на любую услугу,<br>
                         выполняемую мной.</p>
                         <p>P.S.: срок действия сертификата - 3 месяца со<br>
-                        дня вручения имениннику.</p>
+                        дня вручения имениннику.</p> -->
                         <div class="sertificate_content--button">
                             <a href="#contacts"><img src="images/button-circle-1.svg" alt=""></a>
                             <p>Заказать</p>
                         </div>
                     </div>
-                    <img src="images/sertificat-1.png" alt="">
+                    <img class="sertificate_content--main-img" src="images/sertificat-1.png" alt="">
                 </div>                
             </section>
+            <!-- СЕРТИФИКАТ конец -->
+
+            <!-- ОТЗЫВЫ начало -->
             <section class="reviews">
                 <div class="container reviews__slider-js-container">
                     <div class="d-flex flex-sb">
                         <h2>Отзывы</h2>
                         <div class="reviews--arrows">
-                            <a href="#!" class="slaider-btn-rev--js-prev"><img src="images/arrow-2.svg" alt=""></a>
-                            <a href="#!" class="slaider-btn-rev--js-next"><img src="images/arrow-1.svg" alt=""></a>
+                            <a href="#!" class="slaider-btn-rev--js-prev" type="button"><img src="images/arrow-2.svg" alt=""></a>
+                            <a href="#!" class="slaider-btn-rev--js-next" type="button"><img src="images/arrow-1.svg" alt=""></a>
                         </div>
                     </div>
                     <div class="reviews--prop d-flex flex-sb reviews__slider-js">
@@ -239,22 +263,28 @@
                                 <img src="images/reviews-1.png" alt="">
                                 <p>Милана</p>
                             </div>
-                            <p>Мариночка, спасибо тебе<br>
+                            <p>Машуля, спасибо тебе
+                                большое за такую
+                                красоту! С тобой очень приятно работать! Ты
+                                большой профессионал
+                                своего дела!
+                            </p>
+                            <!-- <p>Машуля, спасибо тебе<br>
                                 большое за такую<br>
                                 красоту! С тобой очень приятно работать! Ты<br>
                                 большой профессионал<br>
                                 своего дела!
-                            </p>
+                            </p> -->
                         </div>
                         <div class="reviews-items reviews__slider-js-item">
                             <div>
                                 <img src="images/reviews-2.png" alt="">
                                 <p>Светлана</p>
                             </div>
-                            <p>Мариночка, спасибо тебе<br>
-                                большое за такую<br>
-                                красоту! С тобой очень приятно работать! Ты<br>
-                                большой профессионал<br>
+                            <p>Машуля, спасибо тебе
+                                большое за такую
+                                красоту! С тобой очень приятно работать! Ты
+                                большой профессионал
                                 своего дела!
                             </p>
                         </div>
@@ -263,10 +293,10 @@
                                 <img src="images/reviews-3.png" alt="">
                                 <p>Светлана</p>
                             </div>
-                            <p>Мариночка, спасибо тебе<br>
-                                большое за такую<br>
-                                красоту! С тобой очень приятно работать! Ты<br>
-                                большой профессионал<br>
+                            <p>Машуля, спасибо тебе
+                                большое за такую
+                                красоту! С тобой очень приятно работать! Ты
+                                большой профессионал
                                 своего дела!
                             </p>
                         </div>
@@ -275,17 +305,17 @@
                                 <img src="images/reviews-4.png" alt="">
                                 <p>Светлана</p>
                             </div>
-                            <p>Мариночка, спасибо тебе<br>
-                                большое за такую<br>
-                                красоту! С тобой очень приятно работать! Ты<br>
-                                большой профессионал<br>
+                            <p>Машуля, спасибо тебе
+                                большое за такую
+                                красоту! С тобой очень приятно работать! Ты
+                                большой профессионал
                                 своего дела!
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- СЕРТИФИКАТ конец -->
+            <!-- ОТЗЫВЫ конец -->
 
             <!-- КОНТАКТЫ начало -->
             <section class="contacts">

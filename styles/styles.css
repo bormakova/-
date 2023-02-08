@@ -133,7 +133,7 @@ p {
 }
 
 .banner--prop {
-    height: 650px;
+    height: 100%;
     align-items: center;
 }
 
@@ -168,6 +168,10 @@ p {
 .about-content_text--prop {
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.about-content_text--prop p:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 .about-content--statistic {
