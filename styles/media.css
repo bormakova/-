@@ -48,6 +48,18 @@
         margin-bottom: 50px;
     }
 
+    .header__icons {
+        width: 100%;
+        display: block;
+        position: absolute;
+        z-index: 100;
+        top: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+    
+
     /*--- БАННЕР начало ---*/
     .banner__img {
         object-fit: cover;
@@ -357,6 +369,7 @@
 
     /*--- БАННЕР конец ---*/
 
+    /*--- ОБО МНЕ начало ---*/
     .about {
         height: 500px;
     }
@@ -374,9 +387,10 @@
     }
     
     .about img {
-        width: 45%;
-        height: 35%;
+        width: 170px;
+        height: 220px;
         margin: 0;
+        right: 20px;
     }
 
     .about-content--statistic {
@@ -388,7 +402,9 @@
     .about-content--statistic h2 {
         font-size: 36px;
     }
+    /*--- ОБО МНЕ конец ---*/
 
+    /*--- УСЛУГИ начало ---*/
     .services img {
         width: 100%;
     }
@@ -401,10 +417,11 @@
         background-color: rgba(182, 164, 152, 0.9);
         
     } 
-
-    
-
-    
+    /*--- УСЛУГИ конец ---*/  
+ 
+    .footer_icons {
+        display: none;
+    }
 
 }
 

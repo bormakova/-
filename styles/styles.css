@@ -123,6 +123,10 @@ p {
     display: none;
 }
 
+.header__icons {
+    display: none;
+}
+
 /*--- Хэдер конец ---*/
 
 /*--- Баннер начало ---*/
