@@ -27,15 +27,17 @@
         text-align: center;
         gap: 50px;
         width: 50%;
+        height: 650px;
         z-index: 100;
     }
 
     .header-main_nav--prop {
         display: block;
-        margin-top: 50px;
+        margin-top: 100px;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
+        font-size: 30px;
     }
 
     .header-main_number {
@@ -53,7 +55,7 @@
         display: block;
         position: absolute;
         z-index: 100;
-        top: 450px;
+        top: 500px;
         margin-left: auto;
         margin-right: auto;
     } 
@@ -67,6 +69,10 @@
         height: 90%;
     }
 
+    .banner_text {
+        display: none;
+    }
+
     /*--- БАННЕР конец ---*/
 
     /*--- ОБО МНЕ начало ---*/
@@ -74,7 +80,6 @@
         object-fit: cover;
         width: 450px;
         height: 600px;
-        margin-left: 30px;
     }
 
     .about-content p {
@@ -164,6 +169,19 @@
 
     }
 
+    .header__toggle.is-active + .header-main_nav {
+        height: 550px;
+    }
+
+    .header__icons {
+        top: 450px;
+    } 
+
+    .header-main_nav--prop {
+        font-size: 22px;
+        margin-top: 50px;
+    }
+
     /*--- БАННЕР начало ---*/
     .banner {
         height: 550px;
@@ -175,7 +193,6 @@
 
     .banner_text {
         display: none;;
-
     }
 
     .banner-content {
@@ -209,6 +226,10 @@
 
     .about p {
         font-size: 18px;
+    }
+
+    .about-content {
+        padding-right: 30px;
     }
 
     .about-content--statistic {
@@ -246,10 +267,20 @@
         padding-bottom: 50px;
     }
 
+    .services h3 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
     .services img {
         width: 50%;
         height: auto;
     }
+
+    .services__items--toggle-content p {
+        font-size: 22px;
+    }
+
     /*--- УСЛУГИ конец ---*/
     
 
@@ -333,6 +364,11 @@
     .header__toggle.is-active + .header-main_nav {
         gap: 50px;
         width: 100%;
+        height: 600px;
+    }
+
+    .header-main_nav--prop {
+        font-size: 28px;
     }
 
     /*--- БАННЕР начало ---*/
@@ -363,8 +399,6 @@
 
     .banner__img {
         position: relative;
-        width: 70%;
-        height: auto;
     }
 
     /*--- БАННЕР конец ---*/
@@ -380,6 +414,7 @@
 
     .about-content {
         width: 50%;
+        padding-right: 20px;
     }
 
     .about-content_text--prop p:last-child {
@@ -387,10 +422,7 @@
     }
     
     .about img {
-        width: 170px;
-        height: 220px;
         margin: 0;
-        right: 20px;
     }
 
     .about-content--statistic {
@@ -405,18 +437,25 @@
     /*--- ОБО МНЕ конец ---*/
 
     /*--- УСЛУГИ начало ---*/
-    .services img {
+    /* .services img {
         width: 100%;
+    } */
+
+    .services__items--prop div {
+        position: relative;
+        width: 50%;
+        height: auto;
+        background-color: #b6a498;
+        padding-left: 20px;
+    } 
+
+    .services__items--prop p {
+        font-size: 18px;
     }
 
-     .services__items--prop div {
-        position: absolute;
-        z-index: 100;
-        width: calc(100% - 40px);
-        height: auto;
-        background-color: rgba(182, 164, 152, 0.9);
-        
-    } 
+    .services__items--toggle-content {
+        width: 100%;
+    }
     /*--- УСЛУГИ конец ---*/  
  
     .footer_icons {
@@ -426,11 +465,25 @@
 }
 
 @media screen and (max-width: 450px) {
+    /* УСЛУГИ начало */
+    .services img {
+        width: 100%;
+    }
+
+    .services__items--prop div {
+        position: absolute;
+        left: 0;
+        width: calc(100vw - 40px);
+        height: auto;
+        background-color: rgba(182, 164, 152, 0.9);
+        padding-left: 20px;
+    }
+
     .services__items--toggle h3 {
         position: absolute;
         z-index: 100;
-        width: calc(100% - 40px);
-        top: 1460px;
+        width: calc(100vw - 40px);
+        top: 0;
         background-color: rgba(182, 164, 152, 0.9);
         padding-top: 50px;
         padding-bottom: 50px;
@@ -442,8 +495,7 @@
         height: 23%;
         position: absolute;
         z-index: 100;
-        top: 1647px;
-        width: calc(100% - 40px);
+        width: calc(100vw - 40px);
         background-color: rgba(182, 164, 152, 0.9);
         padding-bottom: 50px;
 
@@ -451,7 +503,8 @@
 
     .services__items--prop-toggle.is-open .services__items--toggle-content {
         display: block;
-        
+        top: 187px;
+        height: 260px;
     }
 
     .services__items--toggle-content p {
@@ -467,10 +520,11 @@
     } */
 
     .services__items--prop h3 {
-        margin-top: 50px;
+        margin-top: 0;
         margin-bottom: 50px;
         text-align: center;
     }
+    /* УСЛУГИ конец */
 
 }
 
