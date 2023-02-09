@@ -536,5 +536,41 @@
     }
     /* УСЛУГИ конец */
 
+    /* СЕРТИФИКАТ начало */
+    .sertificate {
+        height: auto;
+        padding-top: 50px;
+    }
+
+    .sertificate--prop {
+        flex-direction: column;
+    }
+
+    .sertificate--prop img {
+        width: 60%;
+        top: -80px;
+        right: 0;
+        left: 140px;
+    }
+
+    .sertificate_content {
+        width: 100%;
+    }
+    
+    .sertificate h2 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .sertificate_content--button {
+        text-align: left;
+        top: 70px;
+    }
+
+    .sertificate_content--button img {
+        height: 60px;
+        width: 60px;
+    }    
+    /* СЕРТИФИКАТ конец */
 }
 
