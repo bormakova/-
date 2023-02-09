@@ -447,14 +447,18 @@
 
     .services__items--prop div {
         position: relative;
-        width: 50%;
+        width: auto;
         height: auto;
         background-color: #b6a498;
-        padding-left: 20px;
+        padding-left: 10px;
     } 
 
+    .services h3 {
+        font-size: 22px;
+    }
+
     .services__items--prop p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .services__items--toggle-content {
@@ -476,11 +480,11 @@
 
     .services__items--prop div {
         position: absolute;
-        left: 0;
+        /* left: 0; */
         width: calc(100vw - 40px);
         height: auto;
         background-color: rgba(182, 164, 152, 0.9);
-        padding-left: 20px;
+        padding-left: 0;
     }
 
     .services__items--toggle h3 {
@@ -489,9 +493,11 @@
         width: calc(100vw - 40px);
         top: 0;
         background-color: rgba(182, 164, 152, 0.9);
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
         text-align: center;
+        font-size: 36px;
+        /* left: 20px; */
     }
 
     .services__items--toggle-content {
@@ -507,8 +513,8 @@
 
     .services__items--prop-toggle.is-open .services__items--toggle-content {
         display: block;
-        top: 187px;
-        height: 260px;
+        top: 147px;
+        height: 155px;
     }
 
     .services__items--toggle-content p {
