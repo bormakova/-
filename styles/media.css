@@ -258,6 +258,7 @@
         display: flex;
         justify-content: space-between;
         padding-bottom: 50px;
+        max-width: 100%;
     }
 
     .services h3 {
@@ -265,10 +266,10 @@
         margin-bottom: 50px;
     }
 
-    .services img {
-        width: 50%;
+    /* .services img {
+        width: 100%;
         height: auto;
-    }
+    }  */
 
     .services__items--toggle-content p {
         font-size: 22px;
@@ -340,9 +341,13 @@
     }
 
     .services__items img {
-        max-width: 100%;
+        /* max-width: 100%; */
         height: 350px;
         object-fit: cover;
+    }
+
+    .services__items--prop-toggle {
+        width: 50%;
     }
 }
 
