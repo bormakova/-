@@ -218,6 +218,9 @@ p {
     padding-top: 100px;
 }
 
+.services__items--toggle-content {
+    padding-top: 20px;
+}
 /*--- УСЛУГИ конец ---*/
 
 /*--- ПОРТФОЛИО начало ---*/

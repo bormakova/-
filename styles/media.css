@@ -271,6 +271,10 @@
         height: auto;
     }  */
 
+    .services__items--prop-toggle {
+        padding-left: 20px;
+    }
+
     .services__items--toggle-content p {
         font-size: 22px;
     }
@@ -464,7 +468,37 @@
     .services__items--toggle-content {
         width: 100%;
     }
-    /*--- УСЛУГИ конец ---*/  
+    /*--- УСЛУГИ конец ---*/
+    
+    .contacts {
+        height: auto;
+    }
+
+    .contacts--prop {
+        flex-direction: column;
+    }
+
+    .contacts img {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contacts-form {
+        position: relative;
+        top: 100px;
+        padding-left: 0;
+    }
+
+    .contacts-form__button {
+        position: relative;
+        left: 110%;
+        top: -245px;
+    }
+
+    .text-button-click {
+        display: none;
+    }
  
     .footer_icons {
         display: none;
@@ -524,10 +558,6 @@
         margin-bottom: 30px;
     }
 
-    /* .services__items--prop p {
-        font-size: 22px;
-        margin-bottom: 30px;
-    } */
 
     .services__items--prop h3 {
         margin-top: 0;
@@ -572,5 +602,40 @@
         width: 60px;
     }    
     /* СЕРТИФИКАТ конец */
+
+    .contacts {
+        height: auto;
+    }
+
+    .contacts h2 {
+        text-align: center;
+    }
+
+    .contacts img {
+        position: relative;
+        top: 320px;
+    }
+
+    .contacts-form {
+        top: -300px;
+        width: 100%;
+    }
+
+    .contacts-form input {
+        width: 280px;
+    }
+
+    .contacts-form__button {
+        top: 0;
+        left: 0;
+    }
+
+    .contacts-form__button input {
+        width: 200px;
+    }
+
+    .contacts-form__button p {
+        display: none;
+    }
 }
 
