@@ -281,6 +281,32 @@
 
     /*--- УСЛУГИ конец ---*/
     
+    /*--- ПОРТФОЛИО начало ---*/
+    .portfolio h2 {
+        margin-bottom: 70px;
+    }
+
+    .portfolio__arrows {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 20px;
+        left: 0;
+        top: -590px;
+        gap: 380px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .portfolio__arrows button {
+        transform: none;
+    }
+    
+    .portfolio__arrows button:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    /*--- ПОРТФОЛИО конец ---*/
 
     /*--- СЕРТИФИКАТ начало ---*/
     .sertificate--prop img {
@@ -445,10 +471,6 @@
     /*--- ОБО МНЕ конец ---*/
 
     /*--- УСЛУГИ начало ---*/
-    /* .services img {
-        width: 100%;
-    } */
-
     .services__items--prop div {
         position: relative;
         width: auto;
@@ -470,6 +492,45 @@
     }
     /*--- УСЛУГИ конец ---*/
     
+    /*--- СЕРТИФИКАТ начало ---*/
+    .sertificate {
+        height: auto;
+        padding-top: 50px;
+    }
+
+    .sertificate--prop {
+        flex-direction: column;
+    }
+
+    .sertificate--prop img {
+        width: 60%;
+        top: -80px;
+        right: 0;
+        left: 40%;
+    }
+
+    .sertificate_content {
+        width: 100%;
+        padding-right: 0;
+    }
+    
+    .sertificate h2 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .sertificate_content--button {
+        text-align: left;
+        top: 70px;
+    }
+
+    .sertificate_content--button img {
+        height: 60px;
+        width: 60px;
+    }    
+    /*--- СЕРТИФИКАТ конец ---*/
+
+    /*--- ОБРАТНАЯ СВЯЗЬ начало ---*/
     .contacts {
         height: auto;
     }
@@ -499,6 +560,7 @@
     .text-button-click {
         display: none;
     }
+    /*--- ОБРАТНАЯ СВЯЗЬ конец ---*/
  
     .footer_icons {
         display: none;
@@ -507,7 +569,11 @@
 }
 
 @media screen and (max-width: 450px) {
-    /* УСЛУГИ начало */
+    .about h2 {
+
+    }
+
+    /*--- УСЛУГИ начало ---*/
     .services img {
         width: 100%;
     }
@@ -548,7 +614,7 @@
     .services__items--prop-toggle.is-open .services__items--toggle-content {
         display: block;
         top: 147px;
-        height: 155px;
+        height: 135px;
     }
 
     .services__items--toggle-content p {
@@ -564,45 +630,11 @@
         margin-bottom: 50px;
         text-align: center;
     }
-    /* УСЛУГИ конец */
+    /*--- УСЛУГИ конец ---*/
 
-    /* СЕРТИФИКАТ начало */
-    .sertificate {
-        height: auto;
-        padding-top: 50px;
-    }
-
-    .sertificate--prop {
-        flex-direction: column;
-    }
-
-    .sertificate--prop img {
-        width: 60%;
-        top: -80px;
-        right: 0;
-        left: 140px;
-    }
-
-    .sertificate_content {
-        width: 100%;
-    }
     
-    .sertificate h2 {
-        margin-bottom: 30px;
-        text-align: center;
-    }
 
-    .sertificate_content--button {
-        text-align: left;
-        top: 70px;
-    }
-
-    .sertificate_content--button img {
-        height: 60px;
-        width: 60px;
-    }    
-    /* СЕРТИФИКАТ конец */
-
+    /*--- ОБРАТНАЯ СВЯЗЬ начало ---*/
     .contacts {
         height: auto;
     }
@@ -637,5 +669,6 @@
     .contacts-form__button p {
         display: none;
     }
+    /*--- ОБРАТНАЯ СВЯЗЬ конец ---*/
 }
 

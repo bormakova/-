@@ -245,10 +245,10 @@ p {
 }
 
 .portfolio__arrows {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
-    top: 0;
+    top: -545px;
     left: -75px;
 }
 
@@ -256,6 +256,7 @@ p {
     background-color: #b6a498;
     border: 0;
     cursor: pointer;
+    width: 30px;
 }
 
 .portfolio__arrows button:not(:last-child) {
