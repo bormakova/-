@@ -238,6 +238,7 @@ p {
     max-width: 1140px;
     height: 540px;
     position: relative;
+    overflow: hidden;
 }
 
 .portfolio__arrows {
@@ -262,7 +263,7 @@ p {
     width: 1140px;
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .portfolio__slaider--images-items {
@@ -289,7 +290,7 @@ p {
     position: relative;
     height: auto;
     width: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .portfolio__slaider--js-media {

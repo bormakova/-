@@ -26,17 +26,17 @@
             
             <nav class="header-main_nav">
                 <ul class="header-main_nav--prop">
-                    <li><a href="index.html#about">Обо мне</a></li>
-                    <li><a href="index.html#services">Услуги</a></li>
-                    <li><a href="index.html#portfolio">Портфолио</a></li>
-                    <li><a href="index.html#reviews">Отзывы</a></li>
-                    <li><a href="index.html#contacts">Контакты</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
                 <div class="header__icons">
-                    <a href="#"><img src="images/whatsapp1.svg" alt=""></a>
-                    <a href="#"><img src="images/viber1.svg" alt=""></a>
-                    <a href="#"><img src="images/telegram1.svg" alt=""></a>
-                    <a href="#"><img src="images/vk1.svg" alt=""></a>
+                    <a href="#!"><img src="images/whatsapp1.svg" alt=""></a>
+                    <a href="#!"><img src="images/viber1.svg" alt=""></a>
+                    <a href="#!"><img src="images/telegram1.svg" alt=""></a>
+                    <a href="#!"><img src="images/vk1.svg" alt=""></a>
                 </div>
             </nav>
             
@@ -49,7 +49,7 @@
             <section class="banner">
                 <div class="container banner--prop container--color d-flex flex-sb">
                     <div class="banner-content">
-                        <div>
+                        <div class="banner-content__name">
                             <p>Персональный визажист</p>
                             <h1>Мария<br>Теплякова</h1>
                         </div>
@@ -67,7 +67,7 @@
             <!--- Баннер конец --->
 
             <!--- ОБО МНЕ начало --->
-            <section class="about">
+            <section id="about" class="about">
                 <div class="container about--prop d-flex flex-sb">
                     <div class="about-content">
                         <h2>Обо мне</h2>
@@ -103,7 +103,7 @@
             <!-- ОБО МНЕ конец -->
 
             <!-- УСЛУГИ начало -->
-            <section class="services">
+            <section id="services" class="services">
                 <div class="container services--prop">
                     <h2 class="">Услуги</h2>
                     <div class="services__items d-flex flex-sb">
@@ -140,37 +140,21 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="services__items--prop">
-                            <img src="images/services-2.png" alt="">
-                            <div>
-                                <h3>Подготовка к<br>фотосессии</h3>
-                                <p>Цена: 4000 рублей<br>Время: 2 - 3 часа<br>Услуга включает в себя прическу и макияж</p>
-                            </div>
-                        </div> -->
-                        <!-- <div class="services__items--prop">
-                            <img src="images/services-3.png" alt="">
-                            <div>
-                                <h3>Обучающие<br>курсы</h3>
-                                <p>Цена: от 3000 рублей<br>Время: от 4 часов<br>Подробную информацию уточняется по заявке</p>
-                            </div>
-                        </div> -->
+                    
                     </div>
                 </div>
             </section>
             <!-- УСЛУГИ конец -->
 
             <!-- ПОРТФОЛИО начало -->
-            <section class="portfolio">
+            <section id="portfolio" class="portfolio">
                 
                 <div class="container portfolio--prop container--color">
                     
                     <h2>Портфолио</h2>
                     <!-- разобраться почему слайдер проматывает вверх начальный, а не скрывает его и не открывает следующий -->
                     <div class="portfolio__slaider d-flex flex-sb portfolio__slaider--container-js">
-                        <div class="portfolio__arrows">
-                            <button class="slaider-btn--js-prev" type="button"><img src="images/arrow-4.svg" alt=""></button> 
-                            <button class="slaider-btn--js-next" type="button"><img src="images/arrow-3.svg" alt=""></button> 
-                        </div>
+                        
                         <!-- создание слайдера (обернула в див) -->
                         <div class="portfolio__slaider--js portfolio__slaider--js-styles">
                             <!-- слайд 1 -->
@@ -245,6 +229,10 @@
                             </div>
                         </div>
                     </div>
+                    <div class="portfolio__arrows">
+                        <button class="slaider-btn--js-prev" type="button"><img src="images/arrow-4.svg" alt=""></button> 
+                        <button class="slaider-btn--js-next" type="button"><img src="images/arrow-3.svg" alt=""></button> 
+                    </div>
                 </div>
             </section>
             <!-- ПОРТФОЛИО конец -->
@@ -275,7 +263,7 @@
             <!-- СЕРТИФИКАТ конец -->
 
             <!-- ОТЗЫВЫ начало -->
-            <section class="reviews">
+            <section id="reviews" class="reviews">
                 <div class="container reviews__slider-js-container">
                     <div class="d-flex flex-sb">
                         <h2>Отзывы</h2>
@@ -345,7 +333,7 @@
             <!-- ОТЗЫВЫ конец -->
 
             <!-- КОНТАКТЫ начало -->
-            <section class="contacts">
+            <section id="contacts" class="contacts">
                 <div class="container">
                     <h2>Обратная связь</h2>
                     <div class="contacts--prop d-flex flex-sb">
