@@ -340,6 +340,10 @@
     /*--- ОТЗЫВЫ конец ---*/
 
     /*--- КОНТАКТЫ начало ---*/
+    .contacts h2 {
+        padding-bottom: 0;
+    }
+
     .contacts--prop {
         padding-top: 50px;
     }
