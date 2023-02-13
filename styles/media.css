@@ -63,6 +63,10 @@
     
 
     /*--- БАННЕР начало ---*/
+    .banner-content {
+        width: 50%;
+    }
+
     .banner__img {
         object-fit: cover;
         width: 50%;
