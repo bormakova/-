@@ -132,8 +132,8 @@
     }
 
     .portfolio__arrows {
-        top: -95px;
-        left: 340px;
+        top: -635px;
+        left: calc(100vw - 140px);
         display: inline;
     }
 
