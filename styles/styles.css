@@ -337,6 +337,10 @@ p {
     background-color: #fff;
 }
 
+.reviews__slider-js-container {
+    overflow: hidden;
+}
+
 .reviews__slider-js-container div {
     align-items: center;
 }
@@ -348,6 +352,14 @@ p {
     border: 1px solid #5A4530;
 }
 
+.reviews-items div {
+    padding: 20px 20px 0 20px;
+}
+
+.reviews-items p {
+    padding: 20px 20px 0 20px;
+}
+
 .reviews--arrows {
     width: 100px;
     display: flex;
@@ -355,7 +367,7 @@ p {
 }
 
 .reviews__slider-js {
-    overflow: hidden;
+    
     width: 1140px;
     display: flex;
     justify-content: space-between;

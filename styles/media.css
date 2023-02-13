@@ -537,7 +537,7 @@
     
     .sertificate h2 {
         margin-bottom: 30px;
-        text-align: center;
+        text-align: left;
     }
 
     .sertificate__content--button {
@@ -590,6 +590,34 @@
 }
 
 @media screen and (max-width: 450px) {
+    .about-content {
+        padding-right: 0;
+    }
+
+    .about-content h2 {
+        width: calc(100vw - 40px);
+    }
+
+    .about-content--statistic {
+        /* width: calc(100vw - 40px); */
+        display: none;
+    }
+
+    .about-content__text--prop {
+        position: relative;
+        top: 300px;
+        width: calc(100vw - 40px);
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .about img {
+        max-width: 100%;
+        width: 100%;
+        left: -25%;
+        height: 50%;
+    }
+
     /*--- УСЛУГИ начало ---*/
     .services img {
         width: 100%;
@@ -656,27 +684,29 @@
         height: auto;
     }
 
-    .contacts h2 {
-        text-align: center;
-    }
-
     .contacts img {
         position: relative;
         top: 320px;
+        max-width: 100%;
     }
 
     .contacts-form {
         top: -300px;
-        width: 100%;
+        max-width: calc(100vw - 40px);
+        display: flex;
     }
 
     .contacts-form input {
         width: 280px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .contacts-form__button {
         top: 0;
         left: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .contacts-form__button input {
