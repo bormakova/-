@@ -12,7 +12,7 @@
         display: block;
     }
 
-    .header-main_nav {
+    .header-main__nav {
         display: none;
         position: absolute;
         right: 0;
@@ -21,7 +21,7 @@
         background-color: rgba(182, 164, 152, 0.9);
     }
 
-    .header__toggle.is-active + .header-main_nav {
+    .header__toggle.is-active + .header-main__nav {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -31,7 +31,7 @@
         z-index: 100;
     }
 
-    .header-main_nav--prop {
+    .header-main__nav--prop {
         display: block;
         margin-top: 100px;
         margin-left: auto;
@@ -40,13 +40,13 @@
         font-size: 30px;
     }
 
-    .header-main_number {
+    .header-main__number {
         display: none;
         position: relative;
         right: 0;
     }
 
-    .header-main_nav--prop li:not(:last-child) {
+    .header-main__nav--prop li:not(:last-child) {
         margin-bottom: 50px;
     }
 
@@ -69,7 +69,7 @@
         height: 90%;
     }
 
-    .banner_text {
+    .banner__text {
         display: none;
     }
 
@@ -142,6 +142,19 @@
     }
     /*--- ПОРТФОЛИО конец ---*/
 
+    .sertificate__content {
+        width: 50%;
+        padding-right: 30px;
+    }
+
+    reviews__slider-js-container {
+        overflow: hidden;
+    }
+
+    .contacts img {
+        max-width: 50%;
+    }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -162,7 +175,7 @@
 
     }
 
-    .header__toggle.is-active + .header-main_nav {
+    .header__toggle.is-active + .header-main__nav {
         height: 550px;
     }
 
@@ -170,7 +183,7 @@
         top: 450px;
     } 
 
-    .header-main_nav--prop {
+    .header-main__nav--prop {
         font-size: 22px;
         margin-top: 50px;
     }
@@ -184,7 +197,7 @@
         font-size: 18px;
     }
 
-    .banner_text {
+    .banner__text {
         display: none;;
     }
 
@@ -230,7 +243,7 @@
         width: 100%;
     }
 
-    .about-content_text--prop {
+    .about-content__text--prop {
         margin-top: 30px;
         margin-bottom: 30px;
     }
@@ -313,20 +326,20 @@
         width: 50%;
     }
 
-    .sertificate_content {
+    /* .sertificate__content {
         width: 50%;
         padding-right: 30px;
-    }
+    } */
 
-    .sertificate_content p:not(:last-child) {
+    .sertificate__content p:not(:last-child) {
         margin-bottom: 20px;
     }
-    .sertificate_content--button img {
+    .sertificate__content--button img {
         height: 50px;
         width: 50px;
     }
 
-    .sertificate_content--main-img {
+    .sertificate__content--main-img {
         position: relative;
         top: 100px;
         height: 100%;
@@ -369,9 +382,13 @@
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 730px) {
     .banner h1 {
         font-size: 48px;
+    }
+
+    .banner-content {
+        width: 50%;
     }
 
     .services__items img {
@@ -399,13 +416,13 @@
         line-height: 21px;
     }
 
-    .header__toggle.is-active + .header-main_nav {
+    .header__toggle.is-active + .header-main__nav {
         gap: 50px;
         width: 100%;
         height: 600px;
     }
 
-    .header-main_nav--prop {
+    .header-main__nav--prop {
         font-size: 28px;
     }
 
@@ -455,7 +472,7 @@
         padding-right: 20px;
     }
 
-    .about-content_text--prop p:last-child {
+    .about-content__text--prop p:last-child {
         display: none;
     }
     
@@ -513,7 +530,7 @@
         left: 40%;
     }
 
-    .sertificate_content {
+    .sertificate__content {
         width: 100%;
         padding-right: 0;
     }
@@ -523,12 +540,12 @@
         text-align: center;
     }
 
-    .sertificate_content--button {
+    .sertificate__content--button {
         text-align: left;
         top: 70px;
     }
 
-    .sertificate_content--button img {
+    .sertificate__content--button img {
         height: 60px;
         width: 60px;
     }    
@@ -566,17 +583,13 @@
     }
     /*--- ОБРАТНАЯ СВЯЗЬ конец ---*/
  
-    .footer_icons {
+    .footer__icons {
         display: none;
     }
 
 }
 
 @media screen and (max-width: 450px) {
-    .about h2 {
-
-    }
-
     /*--- УСЛУГИ начало ---*/
     .services img {
         width: 100%;
